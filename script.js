@@ -2,7 +2,7 @@ const counterEl = document.getElementById("counter");
 const button = document.getElementById("increment");
 
 // WebSocketサーバーのURL（外部にホストしたもの）
-const socket = new WebSocket("wss://your-server.onrender.com");
+const socket = new WebSocket("wss://counter-mpp8.onrender.com");
 
 socket.onmessage = (event) => {
   counterEl.textContent = event.data;
